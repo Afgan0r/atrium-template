@@ -1,3 +1,22 @@
+/*
+ * Author: Ezhuk, WOG
+ * Adapted, refactored and improved: Afgan0r
+ * Used to get units count by side in trigger.
+ *
+ * Arguments:
+ * 0: Trigger <OBJECT>
+ * 1: Minimum unit height for counting <SCALAR>
+ * 2: Maximum unit height for counting <SCALAR>
+ *
+ * Return Value:
+ * Units list. Key: side name <STRING>. Value: units count <SCALAR>
+ *
+ * Example:
+ * [triggerName, -5, 30] call AFG_fnc_getUnitsCountBySide
+ *
+ * Only server: No
+*/
+
 params ["_trigger", "_minZ", "_maxZ"];
 
 _sides = [west, east, resistance];

@@ -1,3 +1,21 @@
+/*
+ * Author: Ezhuk, WOG
+ * Adapted, refactored and improved: Afgan0r
+ * Used to start blinking the marker.
+ *
+ * Arguments:
+ * 0: Color of the blinking marker. Should be color of the prevailing side <STRING>
+ * 1: Marker name <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * ["ColorBlufor", "marker_name"] spawn AFG_fnc_blinkMarker
+ *
+ * Only server: Yes
+*/
+
 params ["_color", "_marker"];
 
 missionNamespace setVariable [_marker + "_blinkingMarker", true];

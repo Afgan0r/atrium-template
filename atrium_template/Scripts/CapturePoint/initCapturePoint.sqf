@@ -1,3 +1,19 @@
+/*
+ * Author: Afgan0r
+ * Used for initialising and setting up CapturePoint script.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] spawn AFG_fnc_initCapturePoint
+ *
+ * Only server: Yes
+*/
+
 [
 	"marker_name", // название маркера
 	west, // сторона которая владеет зоной на старте, может быть west/east/independent

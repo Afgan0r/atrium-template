@@ -1,3 +1,20 @@
+/*
+ * Author: Ezhuk, WOG
+ * Adapted, refactored and improved: Afgan0r
+ * Used to control zone state.
+ *
+ * Arguments:
+ * See "atrium_template\Scripts\CapturePoint\readme.md"
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * See "atrium_template\Scripts\CapturePoint\readme.md"
+ *
+ * Only server: Yes
+*/
+
 params [
 	"_marker",
 	"_ownerSide",

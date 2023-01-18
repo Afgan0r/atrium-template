@@ -1,3 +1,20 @@
+/*
+ * Author: Ezhuk, WOG
+ * Adapted, refactored and improved: Afgan0r
+ * Used to create trigger. Trigger only user for getting units list.
+ *
+ * Arguments:
+ * 0: Marker name <STRING>
+ *
+ * Return Value:
+ * Trigger var name <OBJECT>
+ *
+ * Example:
+ * "marker_name" call AFG_fnc_createTrigger
+ *
+ * Only server: Yes
+*/
+
 params ["_marker"];
 
 _position = markerPos _marker;
