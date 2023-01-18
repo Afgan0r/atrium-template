@@ -13,8 +13,7 @@
 
 Для включения скрипта на захват зон (триггеров):
 1) Убрать `//` в файле "a3a_server_scripts.sqf" перед вызовом команды `AFG_fnc_initCapturePoint`. Полностью строчка должна выглядеть так: `[] spawn AFG_fnc_initCapturePoint`;
-2) Настроить скрипт в файле "Scripts\CapturePoint\initCapturePoint.sqf";
-Более подробно про работу скрипта можно почитать в файле "Scripts\CapturePoint\readme.md";
+2) Настроить скрипт в файле "Scripts\CapturePoint\initCapturePoint.sqf". Более подробно про работу скрипта можно почитать в файле "Scripts\CapturePoint\readme.md";
 
 Для экспорта снаряжения в файл рекомендуется этот мод: https://steamcommunity.com/sharedfiles/filedetails/?id=2379754169
 
