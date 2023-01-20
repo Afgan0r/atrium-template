@@ -134,7 +134,7 @@ while { !_isFinished } do {
 
 			if (_enableNotifications == true) then {
 				[
-					"",
+					"Зона захвачена",
 					_capturedMessage,
 					"captured",
 					_prevailingSide
