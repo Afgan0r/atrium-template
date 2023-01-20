@@ -30,6 +30,7 @@ params [
 	"_defenceCount",
 	"_enableBlinking",
 	"_enableNotifications",
+	"_enableCapturedNotification",
 	"_debug"
 ];
 
@@ -134,7 +135,7 @@ while { !_isFinished } do {
 
 			_marker setMarkerColor _prevailingSideColor;
 
-			if (_enableNotifications == true) then {
+			if (_enableNotifications == true || _enableCapturedNotification == true) then {
 				[
 					"Зона захвачена",
 					_capturedMessage,
