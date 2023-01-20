@@ -106,6 +106,7 @@ while { !_isFinished } do {
 	};
 
 	if (_capturingState == true) then {
+		// start timer
     if (_isCapturing == false) then {
       _captureStartTime = diag_tickTime;
       _isCapturing = _capturingState;
@@ -126,6 +127,7 @@ while { !_isFinished } do {
       };
     };
 
+		// if capturing complete
     if (diag_tickTime - _captureStartTime >= _captureTime) then {
 			missionNamespace setVariable [_marker + "_pointOwner", str _prevailingSide];
     	missionNamespace setVariable [_marker + "_blinkingMarker", false];
@@ -152,6 +154,7 @@ while { !_isFinished } do {
     _captureStartTime = -1;
     _isCapturing = false;
 
+		// if capturing cancelled or interrupted
 		if (
 			missionNamespace getVariable [_marker + "_capturingInProgress", false]
 			&& !(missionNamespace getVariable [_marker + "_zoneCapturedSuccesfully", false])
