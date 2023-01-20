@@ -33,7 +33,6 @@ params [
 	"_debug"
 ];
 
-_sides = [west, east, resistance];
 _markerOwnerColor = (str _ownerSide) call AFG_fnc_getColorBySide;
 _marker setMarkerColor _markerOwnerColor;
 _marker setMarkerBrush "SolidBorder";
@@ -57,15 +56,17 @@ while { !_isFinished } do {
 
 	// Calculate units count and detect side that have more units in the zone
 	{
-		if (_ownerSide != _x) then {
-			_count = _unitsCount get (str _x);
+		_strSide = str _x;
+
+		if (_currentOwner != _strSide) then {
+			_count = _unitsCount get _strSide;
 
 			if (_count > _prevailingSideUnitsCount) then {
 				_prevailingSide = _x;
 				_prevailingSideUnitsCount = _count;
 			}
 		}
-	} forEach _sides;
+	} forEach [west, east, independent];
 
 	_capturingState = false;
 	_prevailingSideColor = (str _prevailingSide) call AFG_fnc_getColorBySide;
