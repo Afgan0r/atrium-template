@@ -55,7 +55,7 @@
 ] spawn AFG_fnc_zoneInit;
 ```
 
-Команда `[_zones, _minimumZonesCaptured, _winningSide, _winningMessage] spawn AFG_fnc_endMission;` используется для завершении миссии и в файле должен быть только один такой вызов!
+Команда `[_zones, _minimumZonesCaptured, _winningSide, _winningMessage] spawn AFG_fnc_endMission;` используется для завершении миссии. В файле должен быть только один такой вызов и он должен стоять в конце после инциализации всех триггеров
 
 Пример настройки команды для завершения миссии с одним триггером:
 ```sqf
