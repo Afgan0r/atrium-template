@@ -7,7 +7,6 @@ _veh setVariable ["requiredCrew", _varname];
 
 if (_role == "driver") then {
 	_veh addEventHandler ["getIn", {_this spawn {
-		diag_log _this;
 		private ["_veh", "_varname"];
 
 		_veh = _this select 0;
@@ -25,7 +24,6 @@ if (_role == "driver") then {
 
 if (_role == "all") then {
 	_veh addEventHandler ["getIn", {_this spawn {
-		diag_log _this;
 		private ["_veh", "_varname"];
 
 		_veh = _this select 0;

@@ -32,14 +32,10 @@ while { !_isCompleted } do {
 		_isCapturing = missionNamespace getVariable [_markerName + "_capturingInProgress", false];
 		_isCapturedSuccesfully = missionNamespace getVariable [_markerName + "_zoneCapturedSuccesfully", false];
 
-		diag_log [_markerName, _requiredOwnerSide, _zoneOwner, _isCapturing, _isCapturedSuccesfully];
-
 		if (_zoneOwner == _requiredOwnerSide && _isCapturing == false && _isCapturedSuccesfully == true) then {
 			_capturedZones pushBack _markerName;
 		}
 	} forEach _markersHashMap;
-
-	diag_log [_capturedZones, _minZonesCaptured];
 
 	if (count _capturedZones >= _minZonesCaptured) then { _isCompleted = true; };
 
@@ -47,7 +43,5 @@ while { !_isCompleted } do {
 };
 
 sleep 2;
-
-diag_log "all triggers captured";
 
 [_winningMessage, _winningSide] call a3a_fnc_endMission;
