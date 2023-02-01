@@ -1,5 +1,5 @@
 enableSaving [false, false]; // отключение сохранение
-setTerrainGrid 3.125; // отрисовка ландшафта читайте - https://community.bistudio.com/wiki/setTerrainGrid
+setTerrainGrid 3.125; // отрисовка ландшафта, читайте - https://community.bistudio.com/wiki/setTerrainGrid
 
 // Подключение модулей
 #include "Atrium\Setup\a3a_modules.hpp"
