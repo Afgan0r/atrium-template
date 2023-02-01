@@ -1,5 +1,6 @@
 // аналог initServer.sqf
 
+// выдача медицины всем игрокам
 { [_x] execVM "Scripts\addMedicine.sqf"; } forEach playableUnits;
 
 // Параметры для завершения миссии по времени
@@ -28,5 +29,5 @@ _independentEnemySide = blufor; // кто выигрывает в случае �
 	_independentThreshold, _independentMessage, _independentEnemySide
 ] spawn ATRIUM_fnc_endByLoss;
 
-// включение скрипты на захват зон
+// включение скрипта на захват зон
 // [] spawn AFG_fnc_initCapturePoint;
