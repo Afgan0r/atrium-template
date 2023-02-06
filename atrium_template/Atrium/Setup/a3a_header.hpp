@@ -9,10 +9,4 @@ class Header {
 	maxPlayers = 207;
 };
 
-enableItemsDropping = 0;
-
-debriefing = 1;
-briefing = 1;
-aiKills = 0;
-joinUnassigned = 1;
 disableChannels[] = {0};
