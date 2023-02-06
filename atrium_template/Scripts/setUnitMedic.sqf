@@ -1,5 +1,5 @@
 params ["_unit"];
 
-if (!isServer) exitWith {};
-
-_unit setVariable ["ACEMED", 1, true];
+if (isServer) then {
+	_unit setVariable ["ACEMED", 1, true];
+};
