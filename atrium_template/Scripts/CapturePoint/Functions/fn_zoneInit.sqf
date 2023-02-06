@@ -4,13 +4,13 @@
  * Used to control zone state.
  *
  * Arguments:
- * See "atrium_template\Scripts\CapturePoint\readme.md"
+ * See "atrium_template\Scripts\CapturePoint\readme.txt"
  *
  * Return Value:
  * None
  *
  * Example:
- * See "atrium_template\Scripts\CapturePoint\readme.md"
+ * See "atrium_template\Scripts\CapturePoint\readme.txt"
  *
  * Only server: Yes
 */
