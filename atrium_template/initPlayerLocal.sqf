@@ -7,3 +7,17 @@ setTerrainGrid 3.125; // отрисовка ландшафта, читайте -
 
 sleep 0.1;
 enableEnvironment [false, true]; // удаление всей окружающей фауны, звуки остаются
+
+// Используется если нужно указать что-то дополнительно в брифинге
+// т.к. изначально структура брифинга строго одинаковая это может быть полезно
+switch (side player) do {
+	case east: {
+		// player createDiaryRecord ["diary", ["Заголовок", loadFile "A3A_BRIEFING\briefing_filename.html"]];
+	};
+	case west: {
+		// player createDiaryRecord ["diary", ["Заголовок", loadFile "A3A_BRIEFING\briefing_filename.html"]];
+	};
+	case independent: {
+		// player createDiaryRecord ["diary", ["Заголовок", loadFile "A3A_BRIEFING\briefing_filename.html"]];
+	};
+};
