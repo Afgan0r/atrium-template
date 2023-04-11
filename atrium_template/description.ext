@@ -8,7 +8,6 @@ enableDebugConsole = 0;
 
 // нужно для настройки Atrium
 #include "Atrium\Setup\a3a_header.hpp"
-#include "Atrium\Setup\a3a_modules.hpp"
 #include "Atrium\Setup\a3a_parameters.hpp"
 
 class A3A_MissionParams {
