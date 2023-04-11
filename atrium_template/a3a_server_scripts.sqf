@@ -1,7 +1,7 @@
 // аналог initServer.sqf
 
 // выдача медицины всем игрокам
-{ [_x] execVM "Scripts\addMedicine.sqf"; } forEach playableUnits;
+[] execVM "Scripts\addMedicine.sqf";
 
 // Параметры для завершения миссии по времени
 _missionTime = 90; // время миссии в минутах
