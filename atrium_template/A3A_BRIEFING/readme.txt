@@ -8,7 +8,8 @@
 <br/>
 
 Вставить изображение:
-<img image='Images\target.jpg'/>
+<img width='400' image='Images\target.jpg' />
+, где width (ширина) не должны превышать 400 т.к. в таком случае изображение будет обрезаться
 
 Кликабельная ссылка на маркер:
 <marker name='market_1'>Текст</marker>
