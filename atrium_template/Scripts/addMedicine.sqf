@@ -42,7 +42,7 @@ _addMedicineToUnit = {
 		_backpack addItemCargoGlobal ["ACE_salineIV_500", 5]; // физраствор 500 мл
 		_backpack additemcargoGlobal ["ACE_tourniquet", 5]; // жгут
 		_backpack addItemCargoGlobal ["ACE_surgicalKit", 1]; // хир. набор
-		_backpack additemcargoGlobal ["ACE_suture",15]; // шШвы для хирнабора (расходник)
+		_backpack additemcargoGlobal ["ACE_suture", 15]; // шШвы для хирнабора (расходник)
 		_backpack addItemCargoGlobal ["ACE_personalAidKit", 3]; // аптечка
 	};
 };
