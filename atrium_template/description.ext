@@ -3,9 +3,6 @@ onLoadName = "Название миссии";
 onLoadMission = "Описание"; // Описание миссии на загрузочном экране
 loadScreen = "Images\load.jpg"; // Путь до изображения, показываемого на загрузочном экране
 
-// отключает консоль на миссии
-enableDebugConsole = 0;
-
 // нужно для настройки Atrium
 #include "Atrium\Setup\a3a_header.hpp"
 #include "Atrium\Setup\a3a_parameters.hpp"
