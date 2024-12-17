@@ -1,7 +1,8 @@
 atrium_version = 16;
 
-respawn = 1;
-respawndelay = 3;
+respawn = 3;
+respawndelay = 90909;
+respawnOnStart = -1;
 
 class Header {
 	gameType = TEAM;
